@@ -1,0 +1,318 @@
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader .dot {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 87.5px;
+}
+#loader .dot::before {
+    border-radius: 100%;
+    content: "";
+    height: 87.5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    width: 87.5px;
+}
+#loader .dot:nth-child(7n+1) {
+    transform: rotate(45deg);
+}
+#loader .dot:nth-child(7n+1)::before {
+    animation: 0.8s linear 0.1s normal none infinite running load;
+    background: #00ff80 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+2) {
+    transform: rotate(90deg);
+}
+#loader .dot:nth-child(7n+2)::before {
+    animation: 0.8s linear 0.2s normal none infinite running load;
+    background: #00ffea none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+3) {
+    transform: rotate(135deg);
+}
+#loader .dot:nth-child(7n+3)::before {
+    animation: 0.8s linear 0.3s normal none infinite running load;
+    background: #00aaff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+4) {
+    transform: rotate(180deg);
+}
+#loader .dot:nth-child(7n+4)::before {
+    animation: 0.8s linear 0.4s normal none infinite running load;
+    background: #0040ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+5) {
+    transform: rotate(225deg);
+}
+#loader .dot:nth-child(7n+5)::before {
+    animation: 0.8s linear 0.5s normal none infinite running load;
+    background: #2a00ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+6) {
+    transform: rotate(270deg);
+}
+#loader .dot:nth-child(7n+6)::before {
+    animation: 0.8s linear 0.6s normal none infinite running load;
+    background: #9500ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+7) {
+    transform: rotate(315deg);
+}
+#loader .dot:nth-child(7n+7)::before {
+    animation: 0.8s linear 0.7s normal none infinite running load;
+    background: magenta none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+8) {
+    transform: rotate(360deg);
+}
+#loader .dot:nth-child(7n+8)::before {
+    animation: 0.8s linear 0.8s normal none infinite running load;
+    background: #ff0095 none repeat scroll 0 0;
+}
+#loader .lading {
+    background-image: url("../images/loading.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+
+	.title-arch {
+		text-align: center;
+		margin: 50px 0;
+		font-size: 22px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+.project {
+	width: 100%;
+	height: 500px;
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 0 !important;
+	float:left;
+}
+
+.project-2 {
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+}
+
+.project-3 {
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+}
+
+.project-4 {
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+}
+
+.project-hover {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: rgba(186, 232, 2, 0.7);
+	padding: 40% 30px !important;
+}
+
+.project-hover hr {
+	height: 30px;
+	width: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: rgba(255, 255, 255, 1);
+	border: 0;
+}
+
+.project-hover a {
+	color: rgba(255, 255, 255, 1);
+	padding: 2px 22px;
+	line-height: 40px;
+	border: 2px solid rgba(255, 255, 255, 1);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.project-hover a:hover {
+	border-color: rgba(51, 51, 51, 1);
+	color: rgba(51, 51, 51, 1);
+	background-color: #FFF;
+}
+
+.project:hover .project-hover {
+	opacity: 1;
+}
+
+.project:hover .project-hover hr {
+	width: 100%;
+	height: 5px;
+}
+
+/* FOOTER */
+ul{
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0;
+padding: 0;
+display: flex;
+
+}
+ul li{
+list-style: none;
+margin: 0 40px;
+
+}
+ul li .fa{
+font-size: 40px;
+color: #262626;
+line-height: 80px;
+transition: .5s;
+
+}
+ul li a{
+position: relative;
+display: block;
+width: 80px;
+height: 80px;
+background-color: #fff;
+text-align: center;
+transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+transition: .5s;
+box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+ul li a::before{
+content: "";
+position: absolute;
+top: 10px;
+left: -20px;
+height: 100%;
+width: 20px;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewY(-45deg);
+}
+ul li a::after{
+content: "";
+position: absolute;
+top: 80px;
+left: -11px;
+height: 20px;
+width: 100%;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover{
+transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover .fa{
+color: #fff;
+}
+ul li a:hover{
+transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover:nth-child(1) a{
+background: #3b5999;
+}
+
+ul li:hover:nth-child(1) a:before{
+background: #2e4a86;
+}
+ul li:hover:nth-child(1) a:after{
+background: #4a69ad;
+}
+ul li:hover:nth-child(2) a{
+background: #55acee;
+}
+ul li:hover:nth-child(2) a:before{
+background: #4184b7;
+}
+ul li:hover:nth-child(2) a:after{
+background: #4d9fde;
+}
+ul li:hover:nth-child(3) a{
+background: #dd4b39;
+}
+
+ul li:hover:nth-child(3) a:before{
+background: #c13929;
+}
+ul li:hover:nth-child(3) a:after{
+background: #e83322;
+}
+
+ul li:hover:nth-child(4) a{
+background: #0077B5;
+}
+
+ul li:hover:nth-child(4) a:before{
+background: #036aa0;
+}
+ul li:hover:nth-child(4) a:after{
+background: #0d82bf;
+}
+
+ul li:hover:nth-child(5) a{
+background: #e4405f;
+}
+
+ul li:hover:nth-child(5) a:before{
+background: #d02d4c;
+}
+ul li:hover:nth-child(5) a:after{
+background: #f1395c;
+}
